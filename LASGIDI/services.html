@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Contact | LASGIDI CREATIVE CONCEPT LTD</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: #d9d9d9;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 7%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-links a {
+        color: #d9d9d9;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 8px;
+    }
+
+    .nav-links a:hover {
+        text-decoration: underline;
+        color: yellow;
+    }
+
+    /* CONTACT */
+
+    .contact-hero {
+        min-height: 100vh;
+        position: relative;
+
+        background-image: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.60),
+                    rgba(0, 0, 0, 0.70)
+                ),
+                url(images/hero\ \(5\).jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+    }
+
+    .contact-content {
+        position: relative;
+        z-index: 2;
+        width: 90%;
+        max-width: 750px;
+        padding-top: 180px;
+        padding-bottom: 80px;
+        margin-left: 8%;
+        text-align: left;
+    }
+
+    .contact h1 {
+        font-size: 52px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-bottom: 0 0 10px;
+        color: #d9d9d9;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+    }
+
+    .contact-intro {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0 0 35px;
+        line-height: 1.6;
+        color: #d9d9d9;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+    }
+
+    .contact-details {
+        margin-bottom: 50px;
+    }
+
+    .contact-details a{
+        color: #d9d9d9;
+        text-decoration: none;
+    }
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+    .contact-details p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #d9d9d9;
+        text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.9);
+    }
+     .contact-details strong {
+        font-weight: 700;
+        font-size: 20px;
+     }
+
+     .contact-content h1 {
+        font-size: 32px;
+        margin: 0 0 25px;
+        color: #d9d9d9;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+     }
+
+     .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+
+        padding: 18px 20px;
+
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 3px;
+
+        background: rgba(0, 0, 0, 0.65);
+
+        color: white;
+
+        font-size: 18px;
+
+        outline: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .contact-form textarea {
+        resize: vertical;
+    }
+
+    /* BUTTON */
+    .contact-form button {
+        width: fit-content;
+
+        padding: 16px 32px;
+
+        margin-top: 5px;
+
+        border: 2px solid white;
+        border-radius: 2px;
+
+        background: transparent;
+
+        color: #d9d9d9;
+
+        font-size: 18px;
+        font-weight: 700;
+
+        letter-spacing: 1px;
+
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background: white;
+        color: black;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+        .nav-links {
+            gap: 15px;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+        }
+
+        .contact-content {
+            margin-left: 5%;
+            padding-top: 130px;
+        }
+
+        .contact-content h1 {
+            font-size: 34px;
+        }
+
+        .contact-intro {
+            font-size: 16px;
+        }
+    }
+</style>
+</head>
+
+<body>
+    
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        LASGIDI
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="contact.html">Contact</a>
+
+    </div>
+</nav>
+<style>
+  /* ---------- NAVIGATION ---------- */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 7%;
+        border-bottom: 1px solid #222;
+    }
+
+    .brand {
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-links a:hover {
+        color: #d4af37;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .services-hero {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        padding: 80px 7%;
+        background:
+            linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+            url("images/hero.jpg");
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-text {
+        max-width: 800px;
+    }
+
+    .small-title {
+        color: #d4af37;
+        font-size: 14px;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+        line-height: 1.1;
+        margin-bottom: 25px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        color: #cccccc;
+        max-width: 700px;
+    }
+
+
+    /* ---------- SERVICES ---------- */
+
+    .services {
+        padding: 100px 7%;
+    }
+
+    .section-title {
+        margin-bottom: 60px;
+    }
+
+    .section-title p {
+        color: #d4af37;
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+
+    .section-title h2 {
+        font-size: 42px;
+    }
+
+    .service-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .service {
+        border: 1px solid #292929;
+        padding: 35px;
+        background: #101010;
+        transition: 0.3s;
+    }
+
+    .service:hover {
+        transform: translateY(-5px);
+        border-color: #d4af37;
+    }
+
+    .number {
+        color: #d4af37;
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+    }
+
+    .service h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .service p {
+        color: #aaa;
+        font-size: 16px;
+    }
+
+
+    /* ---------- OUR WORK ---------- */
+
+    .our-work {
+        padding: 100px 7%;
+        background: #0d0d0d;
+    }
+
+    .work-intro {
+        max-width: 700px;
+        margin-bottom: 50px;
+    }
+
+    .work-intro p {
+        color: #aaa;
+        margin-top: 15px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+        transition: 0.4s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.03);
+    }
+
+
+    /* ---------- VIDEOS ---------- */
+
+    .videos {
+        padding: 100px 7%;
+    }
+
+    .video-intro {
+        margin-bottom: 50px;
+    }
+
+    .video-intro p {
+        color: #aaa;
+        margin-top: 15px;
+    }
+
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .video-box {
+        background: #111;
+        border: 1px solid #292929;
+        padding: 10px;
+    }
+
+    .video-box video {
+        width: 75%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .video-box h3 {
+        padding: 15px 10px 5px;
+        font-size: 18px;
+    }
+
+    .video-box p {
+        padding: 0 10px 15px;
+        color: #888;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        padding: 50px 7%;
+        border-top: 1px solid #222;
+        text-align: center;
+    }
+
+    footer h3 {
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        color: #777;
+}
+
+
+    /* ---------- MOBILE ---------- */
+
+    @media (max-width: 700px) {
+
+        nav {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .nav-links {
+            gap: 15px;
+            font-size: 14px;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+        }
+
+        .service-list {
+            grid-template-columns: 1fr;
+        }
+
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+
+        .video-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .services,
+        .our-work,
+        .videos {
+            padding: 70px 5%;
+        }
+    }
+
+</style>
+
+<!-- HERO SECTION -->
+
+<section class="services-hero">
+
+    <div class="hero-text">
+
+        <p class="small-title">
+            WHAT WE DO
+        </p>
+
+        <h1>
+            We Create<br>
+            Unforgettable<br>
+            Experiences.
+        </h1>
+
+        <p>
+            At Lasgidi Creative Concept, we combine creativity,
+            technology and production expertise to transform
+            ordinary events into unforgettable experiences.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES SECTION -->
+
+<section class="services">
+
+    <div class="section-title">
+
+        <p>OUR SERVICES</p>
+
+        <h2>Bringing Your Vision To Life.</h2>
+
+    </div>
+
+
+    <div class="service-list">
+
+        <div class="service">
+
+            <div class="number">
+                01
+            </div>
+
+            <h3>
+                LED Screens
+            </h3>
+
+            <p>
+                High-quality LED screen solutions designed to
+                create powerful visuals and keep your audience
+                connected to every moment.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <div class="number">
+                02
+            </div>
+
+            <h3>
+                Event Lighting
+            </h3>
+
+            <p>
+                Creative lighting designs that transform spaces,
+                highlight important moments and create the
+                perfect atmosphere for your event.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <div class="number">
+                03
+            </div>
+
+            <h3>
+                Event Production
+            </h3>
+
+            <p>
+                Professional production support from planning
+                and setup to execution, helping every detail
+                come together seamlessly.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <div class="number">
+                04
+            </div>
+
+            <h3>
+                Live Streaming
+            </h3>
+
+            <p>
+                Reliable live-streaming solutions that bring
+                your events to audiences beyond the physical
+                venue.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- OUR WORK -->
+
+<section class="our-work">
+
+    <div class="work-intro">
+
+        <p class="small-title">
+            OUR WORK
+        </p>
+
+        <h2>
+            Moments We Have Created.
+        </h2>
+
+        <p>
+            A glimpse into some of the events and productions
+            brought to life by Lasgidi Creative Concept.
+        </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <img src="images/hero.jpg" alt="Lasgidi event production">
+
+        <img src="images/hero (2).jpg" alt="Lasgidi event production">
+
+        <img src="images/hero (3).jpg" alt="Lasgidi event production">
+
+        <img src="images/hero (4).jpg" alt="Lasgidi event production">
+
+        <img src="images/hero (5).jpg" alt="Lasgidi event production">
+
+        <img src="images/hero (6).jpg" alt="Lasgidi event production">
+
+        <img src="images/hero (7).jpg" alt="Lasgidi event production">
+        
+         <img src="images/hero (8).jpg" alt="Lasgidi event production">
+
+         <img src="images/hero (9).jpg" alt="Lasgidi event production">
+
+    </div>
+
+</section>
+
+
+<!-- VIDEO SECTION -->
+
+<section class="videos">
+
+    <div class="video-intro">
+
+        <p class="small-title">
+            SEE US IN ACTION
+        </p>
+
+        <h2>
+            More Than Pictures.
+        </h2>
+
+        <p>
+            Experience some of our events and productions
+            through video.
+        </p>
+
+    </div>
+
+
+    <div class="video-grid">
+
+
+        <div class="video-box">
+
+            <video controls>
+                <source src="images/video-1.MP4" type="video/mp4">
+            </video>
+
+            <h3>
+                Event Production
+            </h3>
+
+            <p>
+                Lasgidi Creative Concept
+            </p>
+
+        </div>
+
+
+        <div class="video-box">
+
+            <video controls>
+                <source src="images/video-2.MP4" type="video/mp4">
+            </video>
+
+            <h3>
+                Event Experience
+            </h3>
+
+            <p>
+                Lasgidi Creative Concept
+            </p>
+
+        </div>
+
+
+        <div class="video-box">
+
+            <video controls>
+                <source src="images/video-3.MP4" type="video/mp4">
+            </video>
+
+            <h3>
+                Production In Action
+            </h3>
+
+            <p>
+                Lasgidi Creative Concept
+            </p>
+
+        </div>
+
+
+        <div class="video-box">
+
+            <video controls>
+                <source src="images/video-4.MP4" type="video/mp4">
+            </video>
+
+            <h3>
+                Event Setup
+            </h3>
+
+            <p>
+                Lasgidi Creative Concept
+            </p>
+
+        </div>
+
+
+        <div class="video-box">
+
+            <video controls>
+                <source src="images/video-5.MP4" type="video/mp4">
+            </video>
+
+            <h3>
+                Behind The Scenes
+            </h3>
+
+            <p>
+                Lasgidi Creative Concept
+            </p>
+
+        </div>
+
+
+         <div class="video-box">
+
+            <video controls>
+                <source src="images/video-6.MP4"type="video/mp4">
+            </video>
+
+            <h3>
+                Behind The Scenes
+            </h3>
+
+            <p>
+                Lasgidi Creative Concept
+            </p>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>
+        LASGIDI
+    </h3>
+
+    <p>
+        Creative Concept LTD
+    </p>
+
+    <p>
+        © 2026 Lasgidi Creative Concept LTD. All Rights Reserved.
+    </p>
+
+</footer>
+</body>
+</html>

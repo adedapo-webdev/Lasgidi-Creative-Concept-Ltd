@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>LASGIDI CREATIVE 
+            CONCEPT LTD</title>
+         <link rel="stylesheet" href="style.css">
+         </head>
+         <style>
+            * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #000;
+        color: #ffffff;
+    }
+
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        height: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 55px;
+
+        z-index: 100;
+    }
+
+
+    /* TOP LEFT LASGIDI */
+
+    .logo {
+        color: #ffffff;
+
+        font-size: 20px;
+
+        font-weight: 700;
+
+        letter-spacing: 1px;
+    }
+
+
+    /* TOP RIGHT LINKS */
+
+    .nav-links {
+        display: flex;
+
+        align-items: center;
+
+        gap: 35px;
+    }
+
+    .nav-links a {
+        color: #ffffff;
+
+        text-decoration: none;
+
+        font-size: 24px;
+
+        font-weight: 700;
+
+        transition: 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #f4b942;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+        min-height: 100vh;
+
+        width: 100%;
+
+        position: relative;
+
+        display: flex;
+
+        align-items: center;
+
+
+        /*
+        DARK OVERLAY + BACKGROUND IMAGE
+        */
+
+        background-image:
+            linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.88) 0%,
+                rgba(0, 0, 0, 0.72) 32%,
+                rgba(0, 0, 0, 0.38) 65%,
+                rgba(0, 0, 0, 0.12) 100%
+            ),
+            url("images/hero.jpg");
+
+        background-size: cover;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+    }
+
+
+    /* =========================
+       HERO CONTENT
+    ========================= */
+
+    .hero-content {
+        width: 55%;
+
+        max-width: 700px;
+
+        margin-left: 7%;
+
+        margin-top: -35px;
+
+        text-align: left;
+    }
+
+
+    /* =========================
+       MAIN HEADING
+    ========================= */
+
+    .hero h1 {
+        margin: 0;
+
+        color: #ffffff;
+
+        font-size: 58px;
+
+        line-height: 0.98;
+
+        font-weight: 800;
+
+        letter-spacing: 1px;
+
+        text-transform: uppercase;
+
+        text-shadow:
+            2px 3px 8px rgba(0, 0, 0, 0.9);
+    }
+
+
+    /* CONCEPT LTD ON SECOND LINE */
+
+    .hero h1 span {
+        display: block;
+
+        margin-top: 5px;
+
+        color: #f4b942;
+    }
+
+
+    /* =========================
+       TAGLINE
+    ========================= */
+
+    .tagline {
+        margin-top: 22px;
+
+        margin-bottom: 0;
+
+        color: #ffffff;
+
+        font-size: 22px;
+
+        font-weight: 700;
+
+        letter-spacing: 1px;
+
+        text-align: left;
+
+        text-shadow:
+            2px 2px 6px rgba(0, 0, 0, 0.9);
+    }
+
+
+    /* =========================
+       DESCRIPTION
+    ========================= */
+
+    .description {
+        max-width: 550px;
+
+        margin-top: 14px;
+
+        color: #ffffff;
+
+        font-size: 18px;
+
+        line-height: 1.5;
+
+        font-weight: 500;
+
+        text-align: left;
+
+        text-shadow:
+            2px 2px 6px rgba(0, 0, 0, 0.9);
+    }
+
+
+    /* =========================
+       BOOK AN EVENT BUTTON
+    ========================= */
+
+    .book-button {
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 18px;
+
+        margin-top: 28px;
+
+        padding: 15px 28px;
+
+        border: 2px solid #f4b942;
+
+        background: rgba(0, 0, 0, 0.60);
+
+        color: #ffffff;
+
+        text-decoration: none;
+
+        font-size: 17px;
+
+        font-weight: 700;
+
+        letter-spacing: 1px;
+
+        transition: all 0.3s ease;
+    }
+
+
+    /* ARROW */
+
+    .book-button span {
+        color: #f4b942;
+
+        font-size: 24px;
+
+        line-height: 1;
+    }
+
+
+    /* BUTTON HOVER */
+
+    .book-button:hover {
+        background: #f4b942;
+
+        color: #000000;
+    }
+
+    .book-button:hover span {
+        color: #000000;
+    }
+
+
+  /*LASGIDI MOBILE RESPONSIVENESS */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
+img, video, iframe { max-width: 100%; }
+/* TABLET AND MOBILE */
+@media screen and (max-width: 768px) {
+nav {
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    padding: 18px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 14px;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px 16px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 155px 6% 40px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    min-width: 0;
+}
+
+.hero h1 {
+    font-size: clamp(28px, 7.5vw, 40px);
+    line-height: 1.08;
+    letter-spacing: 0.3px;
+    overflow-wrap: anywhere;
+}
+
+.hero h1 span {
+    display: block;
+    margin-top: 6px;
+}
+
+.tagline {
+    font-size: clamp(15px, 4vw, 18px);
+    line-height: 1.5;
+    margin-top: 18px;
+    letter-spacing: 0.5px;
+}
+
+.description {
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+
+.book-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%;
+    padding: 13px 16px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    white-space: normal;
+}
+
+.book-button span {
+    font-size: 21px;
+    flex-shrink: 0;
+}
+}
+/* EXTRA SMALL PHONES */
+@media screen and (max-width: 360px) {
+nav {
+    padding: 16px 5%;
+}
+
+.nav-links {
+    gap: 7px 12px;
+}
+
+.nav-links a {
+    font-size: 12px;
+}
+
+.hero {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.hero h1 {
+    font-size: 28px;
+}
+
+.book-button {
+    padding: 12px;
+    font-size: 12px;
+}
+
+/* COPYRIGHT FOOTER */
+.site-footer {
+  width: 100%;
+  padding: 25px 20px;
+  background: #080808;
+  color: #bdbdbd;
+  text-align: center;
+  border-top: 1px solid rgba(244, 185, 66, 0.3);
+}
+
+.site-footer p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.site-footer .footer-tagline {
+  margin-top: 5px;
+  color: #f4b942;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 480px) {
+  .site-footer {
+    padding: 22px 14px;
+  }
+
+  .site-footer p {
+    font-size: 11px;
+  }
+
+  .site-footer .footer-tagline {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+}
+}
+
+</style>
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <!-- LEFT TOP BAR -->
+    <div class="logo">
+        LASGIDI
+    </div>
+
+
+    <!-- RIGHT TOP BAR -->
+    <div class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="services.html">
+            Services
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+
+        <!-- COMPANY NAME -->
+
+        <h1>
+
+            LASGIDI CREATIVE
+
+            <span>
+                CONCEPT LTD
+            </span>
+
+        </h1>
+
+
+
+        <!-- TAGLINE -->
+
+        <p class="tagline">
+            YOUR EVENT. OUR SUCCESS.
+        </p>
+
+
+
+        <!-- DESCRIPTION -->
+
+        <p class="description">
+            We bring to life through stunning visuals,
+            LED screens, lighting, sound and creative technology.
+        </p>
+
+
+
+        <!-- BOOK AN EVENT -->
+
+        <a href="contact.html" class="book-button">
+
+            BOOK AN EVENT
+
+            <span>
+                →
+            </span>
+                </a>
+
+         </div>
+
+    </section>
+<footer class="site-footer">
+  <p>
+    &copy; <span id="copyright-year"></span>
+    LASGIDI CREATIVE CONCEPT LTD.
+    All Rights Reserved.
+  </p>
+</footer>
+
+<script>
+  document.getElementById("copyright-year").textContent =
+    new Date().getFullYear();
+</script>
+    </body>
+  </html>

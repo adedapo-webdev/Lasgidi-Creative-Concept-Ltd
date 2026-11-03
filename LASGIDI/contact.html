@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Contact | LASGIDI CREATIVE CONCEPT LTD</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: #d9d9d9;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 7%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-links a {
+        color: #d9d9d9;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 8px;
+    }
+
+    .nav-links a:hover {
+        text-decoration: underline;
+        color: yellow;
+    }
+
+    /* CONTACT */
+
+    .contact-hero {
+        min-height: 100vh;
+        position: relative;
+
+        background-image: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.60),
+                    rgba(0, 0, 0, 0.70)
+                ),
+                url(images/hero\ \(5\).jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+    }
+
+    .contact-content {
+        position: relative;
+        z-index: 2;
+        width: 90%;
+        max-width: 750px;
+        padding-top: 180px;
+        padding-bottom: 80px;
+        margin-left: 8%;
+        text-align: left;
+    }
+
+    .contact h1 {
+        font-size: 52px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-bottom: 0 0 10px;
+        color: #d9d9d9;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+    }
+
+    .contact-intro {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0 0 35px;
+        line-height: 1.6;
+        color: #d9d9d9;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+    }
+
+    .contact-details {
+        margin-bottom: 50px;
+    }
+
+    .contact-details a{
+        color: #d9d9d9;
+        text-decoration: none;
+    }
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+    .contact-details p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #d9d9d9;
+        text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.9);
+    }
+     .contact-details strong {
+        font-weight: 700;
+        font-size: 20px;
+     }
+
+     .contact-content h1 {
+        font-size: 32px;
+        margin: 0 0 25px;
+        color: #d9d9d9;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+     }
+
+     .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+
+        padding: 18px 20px;
+
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 3px;
+
+        background: rgba(0, 0, 0, 0.65);
+
+        color: white;
+
+        font-size: 18px;
+
+        outline: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .contact-form textarea {
+        resize: vertical;
+    }
+
+    /* BUTTON */
+    .contact-form button {
+        width: fit-content;
+
+        padding: 16px 32px;
+
+        margin-top: 5px;
+
+        border: 2px solid white;
+        border-radius: 2px;
+
+        background: transparent;
+
+        color: #d9d9d9;
+
+        font-size: 18px;
+        font-weight: 700;
+
+        letter-spacing: 1px;
+
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background: white;
+        color: black;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+        .nav-links {
+            gap: 15px;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+        }
+
+        .contact-content {
+            margin-left: 5%;
+            padding-top: 130px;
+        }
+
+        .contact-content h1 {
+            font-size: 34px;
+        }
+
+        .contact-intro {
+            font-size: 16px;
+        }
+    }
+</style>
+</head>
+
+<body>
+    
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        LASGIDI
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+</nav>
+
+<section class="contact-hero">
+
+    <div class="contact-content">
+
+        <h1>
+            GET IN TOUCH WITH US
+        </h1>
+
+        <p class="contact-intro">
+            Let's create something unforgettable for your event.
+        </p>
+
+
+        <div class="contact-details">
+
+            <p>
+                <strong>WhatsApp:</strong><br>
+                 <a href="https://wa.me/2348161250868/" target="_blank">
+                +234 816 125 0868<br>
+                 <a href="https://wa.me/2348159550306/" target="_blank">
+                +234 815 955 0306
+                </a>
+            </p>
+
+            <p>
+                <strong>Email:</strong><br>
+                 <a href="mailto:lasgidicrea8ive@gmail.com">
+                lasgidicrea8ive@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Instagram:</strong><br>
+                <a href="https://www.instagram.com/lasgidiscreenguy/" target="_blank">
+                @lasgidiscreenguy
+                </a>
+            </p>
+
+        </div>
+
+
+        <h2>
+            SEND A MESSAGE
+        </h2>
+
+
+        <form class="contact-form" onsubmit="sendMessage(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <input
+                type="tel"
+                id="tel"
+                placeholder="Your Phone Number"
+                required
+            >
+
+            <textarea
+            id="MESSAGE"
+                placeholder="Tell us about your event..."
+                rows="5"
+                required
+            ></textarea>
+
+            <select id="sendTo" required>
+                <option value="">SEND MESSAGE VIA</option>
+                <option value="email">Email</option>
+                <option value="whatsapp">WhatsApp</option>
+            </select>
+
+            <button type="submit">
+                SEND MESSAGE
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+</body>
+></html>
